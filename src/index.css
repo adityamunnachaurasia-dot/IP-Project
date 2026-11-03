@@ -1,0 +1,44 @@
+/* ============================================================
+   Global base styles + CSS theme variables
+   ============================================================ */
+:root {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --text: #1e2430;
+  --text-muted: #6b7280;
+  --primary: #4361ee;
+  --primary-dark: #3450c8;
+  --purple: #7c3aed;
+  --green: #16a34a;
+  --orange: #f59e0b;
+  --red: #dc2626;
+  --border: #e2e6ef;
+  --shadow: 0 4px 16px rgba(30, 36, 48, 0.08);
+  --radius: 14px;
+}
+
+body.dark {
+  --bg: #0f1320;
+  --surface: #1a2032;
+  --text: #e8ecf5;
+  --text-muted: #9aa5bc;
+  --border: #2a3348;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  transition: background 0.25s, color 0.25s;
+}
+
+a { color: inherit; }
+button { font-family: inherit; }
